@@ -16,8 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Stream Deck',
       theme: ThemeData(
-        brightness: Brightness.light,
-        accentColor: Color(0xFF5E5CE6),
+        brightness: Brightness.light, colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Color(0xFF5E5CE6)),
       ),
       home: ConnectScreen(),
     );
